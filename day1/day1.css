@@ -36,4 +36,5 @@ html{
 {
     border-color: #ffc600;
     transition: .2s;
+    transform: scale(0.7);
 }
