@@ -1,0 +1,39 @@
+html{
+    background-image: url(http://i.imgur.com/b9r5sEL.jpg);
+}
+.custom
+{
+    color: white;
+    font-weight: 600;
+    border: 5px solid rgba(0, 0, 0, 0.774);
+    background-color: rgba(0, 0, 0, 0.562);
+    display:inline-block;
+    padding: 1.5% 1.5%;
+    margin: .5%;
+      
+}
+.color
+{
+    color:#ffc600;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+.element
+{
+    margin: 0%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.cont
+{
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.custom_trans
+{
+    border-color: #ffc600;
+    transition: .2s;
+}

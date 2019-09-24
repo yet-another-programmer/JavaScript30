@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Day 1</title>
+    <link rel="stylesheet" href="day1.css">
+</head>
+<body>
+   <center> <div class="cont">
+        <div class="custom" id="65">
+            <center>
+           <h2 class="element"> A </h2>
+            <span class="color">CLAP</span>
+            </h2>
+               
+        </center>
+        </div> 
+        <div class="custom" id="83">
+            <center>
+           <h2 class="element"> S </h2>
+            <span class="color">HIHAT</span>
+            </h2>
+               
+        </center>
+        </div>
+        <div class="custom" id="68">
+            <center>
+           <h2 class="element"> D </h2>
+            <span class="color">KICK</span>
+            </h2>
+               
+        </center>
+        </div>
+        <div class="custom" id="70">
+            <center>
+           <h2 class="element"> F </h2>
+            <span class="color">OPENHAT</span>
+            </h2>
+               
+        </center>
+        </div>
+        <div class="custom" id="71">
+            <center>
+           <h2 class="element"> G </h2>
+            <span class="color">BOOM</span>
+            </h2>
+               
+        </center>
+        </div>
+        <div class="custom" id="72">
+            <center>
+           <h2 class="element"> H </h2>
+            <span class="color">RIDE</span>
+            </h2>
+               
+        </center>
+        </div>
+        <div class="custom" id="74">
+            <center>
+           <h2 class="element"> J </h2>
+            <span class="color">SNARE</span>
+            </h2>
+               
+        </center>
+        </div>
+        <div class="custom" id="75">
+            <center>
+           <h2 class="element"> K </h2>
+            <span class="color">TOM</span>
+            </h2>
+               
+        </center>
+        </div>
+        <div class="custom" id="76">
+            <center>
+           <h2 class="element"> L </h2>
+            <span class="color">TINK</span>
+            </h2>
+               
+        </center>
+        </div>
+
+    </div>
+    </center>
+    <audio data-key="65" src="sounds/clap.wav"></audio>
+    <audio data-key="83" src="sounds/hihat.wav"></audio>
+    <audio data-key="68" src="sounds/kick.wav"></audio>
+    <audio data-key="70" src="sounds/openhat.wav"></audio>
+    <audio data-key="71" src="sounds/boom.wav"></audio>
+    <audio data-key="72" src="sounds/ride.wav"></audio>
+    <audio data-key="74" src="sounds/snare.wav"></audio>
+    <audio data-key="75" src="sounds/tom.wav"></audio>
+    <audio data-key="76" src="sounds/tink.wav"></audio>
+        <script>
+            window.addEventListener('keydown',play);
+
+            function play(e)
+            {
+                var code = e.keyCode;
+                // console.log(e);
+                var keys=document.querySelectorAll(".element");
+                // console.log(keys);
+                var audio= document.querySelector(`audio[data-key="${code}"]`);
+                var key=document.getElementById(e.keyCode);
+                console.log(key);
+                if (!audio)
+                {
+                    console.log("Error");
+                    
+                    return;
+                }
+                audio.currentTime=0;
+                key.classList.add('custom_trans');   
+                console.log("added");
+                audio.play();
+                setTimeout(function() {
+                    key.classList.remove('custom_trans');
+                },200);
+            
+                
+                // console.log(audio);
+            }
+    </script>
+
+</body>
+</html>
