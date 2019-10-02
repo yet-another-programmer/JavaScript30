@@ -1,0 +1,47 @@
+.contain
+{
+    border: 2px;
+    border-radius: 50%;
+    background-color: darkblue;
+    height: 400px;
+    width: 400px;
+   
+}
+
+.hand-cont{
+    position: relative;
+    height: 100%;
+    top: 0%;
+}
+
+.hand
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform-origin: 0% 0%;
+}
+.hour
+{
+    /* transform: rotate(180deg); */
+    /* margin-left: 1.75%; */
+    width: 2.5%;
+    height: 35%;
+    background-color: white;
+}
+
+.minute
+{
+    /* transform: rotate(90deg); */
+    width: 1.5%;
+    height: 42%;
+    background-color: rgb(187, 110, 218);
+}
+
+.sec
+{
+    /* transform: rotate(60deg); */
+    width: 1%;
+    height: 45%;
+    background-color: magenta;
+}
