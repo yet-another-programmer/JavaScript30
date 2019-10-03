@@ -14,13 +14,14 @@ console.log(cont);
 setInterval(() => {    
 
     date= new Date();
-    min= (date.getMinutes()*5)+180;
-    sec= (date.getSeconds()*5)+180;
-    hour=(date.getHours()*30)+180;    
-    console.log(min);
-    // console.log(sec);
+    min= ((date.getMinutes()/60)*360)+180;
+    sec= ((date.getSeconds()/60)*360)+180;
+    hour=((date.getHours()/60)*360)+180;    
+    // console.log(min);
+    //  console.log(sec);
     // console.log(hour);
     // console.log(cont[1]);
+//    console.log(date.getSeconds());
     
     cont[0].style.transform=`rotate(${hour}deg)`;
     cont[1].style.transform=`rotate(${min}deg)`;

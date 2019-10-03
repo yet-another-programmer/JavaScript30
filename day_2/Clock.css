@@ -5,6 +5,7 @@
     background-color: darkblue;
     height: 400px;
     width: 400px;
+    position: relative;
    
 }
 
@@ -25,7 +26,7 @@
 {
     /* transform: rotate(180deg); */
     /* margin-left: 1.75%; */
-    width: 2.5%;
+    width: 2%;
     height: 35%;
     background-color: white;
 }
@@ -33,7 +34,7 @@
 .minute
 {
     /* transform: rotate(90deg); */
-    width: 1.5%;
+    width: 1.75%;
     height: 42%;
     background-color: rgb(187, 110, 218);
 }
@@ -41,7 +42,7 @@
 .sec
 {
     /* transform: rotate(60deg); */
-    width: 1%;
+    width: 1.5%;
     height: 45%;
     background-color: magenta;
 }
