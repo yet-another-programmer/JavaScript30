@@ -1,0 +1,43 @@
+body
+{
+    background-color: #193549;
+    color: white;
+    text-align: center;
+}
+
+.contain
+{
+
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.order
+{
+    display: inline;
+    padding-top: 5%;
+}
+.order h2
+{
+    display: inline;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+#im
+{
+   filter: blur(var(--bl));
+
+   background: var(--cl);
+   padding: var(--pd);
+}
+
+#jas
+{
+    color: var(--cl);
+}
+
+:root
+{
+    --cl=red;
+}
