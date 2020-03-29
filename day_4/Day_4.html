@@ -80,12 +80,12 @@
 
     // Array.prototype.reduce()
     // 4. How many years did all the inventors live?
-      var counter=0;
-      var life = inventors.reduce(function(counter){
-        counter=inventors.passed-inventors.year;
-        return counter;
-      })
-      console.log(counter);
+      // var counter=0;
+      var life = inventors.reduce((counter,inventor)=> {
+        return (counter+(inventor.passed-inventor.year));
+      },0);
+      console.log(life);
+        
       
     // 5. Sort the inventors by years lived
 
